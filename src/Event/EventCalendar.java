@@ -1,6 +1,7 @@
 package Event;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class EventCalendar {
     private ArrayList<Event> events = new ArrayList<>();
@@ -72,5 +73,16 @@ public class EventCalendar {
             }
         }return result;
     }
+
+    public void removeExpensive3(double limit){
+        Iterator<Event> it = events.iterator();
+        while (it.hasNext()) {
+            Event event = it.next();
+            if (event.getPreis()>limit) {
+                it.remove();
+            }
+        }
+    }
+
 
 }

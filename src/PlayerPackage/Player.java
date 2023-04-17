@@ -1,5 +1,7 @@
 package PlayerPackage;
 
+import java.util.Objects;
+
 public class Player {
     private int id; // gehört jedem Objekt extra!
     static int counter=0;
@@ -15,6 +17,33 @@ public class Player {
         this.points = points;
         counter ++; // counter erhöht sich nach jedem Objekt automatisch
 
+    }
+
+    public Player(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+             // Weglassen, sonst wird das mit ausgegeben!!!   ", team=" + team +
+                " points=" + points +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Player player = (Player) o;
+        return name.equals(player.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 
     public int getId() {

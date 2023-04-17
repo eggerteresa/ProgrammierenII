@@ -1,5 +1,7 @@
 package friendlist;
 
+import java.util.Objects;
+
 public class Friend {
     private String name;
     private int age;
@@ -17,6 +19,19 @@ public class Friend {
                 ", country='" + country + '\'' +
                 ", knownSince=" + knownSince +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Friend friend = (Friend) o;
+        return age == friend.age  && name.equals(friend.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 
     public Friend(String name, int age, String city, String country, int knownSince) {

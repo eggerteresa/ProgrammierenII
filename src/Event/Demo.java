@@ -24,5 +24,7 @@ public class Demo {
         System.out.println(eventCalendar.getByOrt("Wien"));
 
         System.out.println(eventCalendar.getMostExpensive());
+    eventCalendar.removeExpensive3(230.0); // Entfernt teuerstes Event
+eventCalendar.print(); // gibt Eventkalender mit allen Events aus
     }
 }

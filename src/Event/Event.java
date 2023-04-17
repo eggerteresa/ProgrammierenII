@@ -1,5 +1,7 @@
 package Event;
 
+import java.util.Objects;
+
 public class Event {
     private EventType type;
     private String title;
@@ -14,6 +16,19 @@ public class Event {
                 ", ort='" + ort + '\'' +
                 ", preis=" + preis +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Event event = (Event) o;
+        return type == event.type && title.equals(event.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, title);
     }
 
     public Event(EventType type, String title, String ort, double preis) {
