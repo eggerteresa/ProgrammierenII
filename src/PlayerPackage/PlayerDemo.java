@@ -46,5 +46,8 @@ public class PlayerDemo {
         liste1.addOrUpdate(player4, 24);
         System.out.println(liste1.getPlayerList());
 
+        SpielerMap spielermap = new SpielerMap();
+       // spielermap.addOrUpdate( 23);
+
     }
 }
