@@ -1,5 +1,7 @@
 package Einheit1Hofer.Hasenuebung;
 
+import java.util.ArrayList;
+
 public class HaseMain {
     public static void main(String[] args) {
 
@@ -30,7 +32,18 @@ stall1.addHase(h3);
 
 stall1.alleHoppeln();
 
+// Party
+        ArrayList <GoesToParty> allemiteinladung = new ArrayList<>(); // hier speichern wir alle Hasen rein, die wir einladen
+        allemiteinladung.add(h1);
+        allemiteinladung.add(h2);
+        allemiteinladung.add(h3);
+        allemiteinladung.add(new Hase("hasenbaer"));
+        allemiteinladung.add(new Igel()); // Igel hinzufügen zu ArrayList und gleichzeitig anlegen eines Igels
 
+
+        for (int i = 0; i<allemiteinladung.size(); i++) {
+            allemiteinladung.get(i).party("Karottenwasser", "karottenkuchen");
+        }
 
     }
 }

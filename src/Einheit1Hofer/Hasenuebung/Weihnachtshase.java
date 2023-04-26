@@ -10,9 +10,8 @@ public class Weihnachtshase extends Hase{
         System.out.println(getName() + " verteilt "+ beschreibung + " Geschenke");
     }
 
-
-
-
-
-
+    @Override
+    public void party(String drink, String cake) {
+        System.out.println("Weihnachtshase " + getName() + " bringt ganz viele Geschenke zur Party ");
+    }
 }
