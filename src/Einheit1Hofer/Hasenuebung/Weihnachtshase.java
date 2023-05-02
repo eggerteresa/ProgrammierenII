@@ -6,6 +6,10 @@ public class Weihnachtshase extends Hase{
         super(name);
     }
 
+    public Weihnachtshase(String name, int alter) {
+        super(name, alter);
+    }
+
     public void  verteileGeschenke(String beschreibung) {
         System.out.println(getName() + " verteilt "+ beschreibung + " Geschenke");
     }
