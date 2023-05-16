@@ -1,5 +1,9 @@
 package OrchesteruebungHofer;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class MainOrchester {
 
     public static void main(String[] args) {
@@ -32,6 +36,48 @@ public class MainOrchester {
 
         System.out.println("Das ganze Orchester spielt: ");
         System.out.println("Die Lautstärke aller Instrumente ist: " + orchester.playAll());
+
+        List<Instrument> instrumente = new ArrayList<>();
+
+        instrumente.add(geige1);
+        instrumente.add(gitarre1);
+        instrumente.add(trompete1);
+        instrumente.add(klarinette1);
+
+
+
+        System.out.println(instrumente);
+        //collection sortieren
+
+        System.out.println(" -----");
+
+        //müsste man noch toString Methode implementieren , sortieren mit comparable
+
+        Collections.sort(instrumente);
+
+        System.out.println((instrumente));
+
+
+
+        //Comparator ausprobieren
+
+        List <Instrument> instrumente3 = new ArrayList<>();
+
+        instrumente3.add(new Geige(10, 100, "Hansi"));
+        instrumente3.add(new Geige(10, 80, "Hansi2"));
+        instrumente3.add(new Geige(10, 1000, "Gigi"));
+        instrumente3.add(new Gitarre(10, 500, "Helli"));
+        instrumente3.add(new Gitarre(10, 33, "Hubsi"));
+        instrumente3.add(new Klarinette(10));
+        instrumente3.add(new Klarinette(5 ));
+
+
+        System.out.println(instrumente3);
+        System.out.println("-----");
+//Achtung anders: comparator angeben:
+Collections.sort(instrumente3, new InstrumentNameValueComparator());
+        System.out.println((instrumente3));
+
 
     }
 }

@@ -5,6 +5,9 @@ public class Gitarre extends Instrument{ //ableiten von Basisklasse
         super(lautstaerke);
     }
 
+    public Gitarre(int lautstaerke, double value, String nickName) {
+        super(lautstaerke, value, nickName);
+    }
 
     @Override
     public int play() { // Überschreiben der play Methode

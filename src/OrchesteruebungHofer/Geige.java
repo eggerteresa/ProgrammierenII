@@ -6,6 +6,10 @@ public class Geige extends Instrument{
         super(lautstaerke);
     }
 
+    public Geige(int lautstaerke, double value, String nickName) {
+        super(lautstaerke, value, nickName);
+    }
+
     @Override
     public int play() {
         System.out.println("Die Geige wird gestrichen");
