@@ -27,15 +27,15 @@ public class HaseMain {
         h3.verteileGeschenke(" wunderschöne tolle weihnachts- ");
         h3.hasehoppelt(20);
 
-Hasenstall stall1 = new Hasenstall();
-stall1.addHase(h1);
-stall1.addHase(h2);
-stall1.addHase(h3);
+        Hasenstall stall1 = new Hasenstall();
+        stall1.addHase(h1);
+        stall1.addHase(h2);
+        stall1.addHase(h3);
 
-stall1.alleHoppeln();
+        stall1.alleHoppeln();
 
 // Party
-        ArrayList <GoesToParty> allemiteinladung = new ArrayList<>(); // hier speichern wir alle Hasen rein, die wir einladen
+        ArrayList<GoesToParty> allemiteinladung = new ArrayList<>(); // hier speichern wir alle Hasen rein, die wir einladen
         allemiteinladung.add(h1);
         allemiteinladung.add(h2);
         allemiteinladung.add(h3);
@@ -43,7 +43,7 @@ stall1.alleHoppeln();
         allemiteinladung.add(new Igel()); // Igel hinzufügen zu ArrayList und gleichzeitig anlegen eines Igels
 
 
-        for (int i = 0; i<allemiteinladung.size(); i++) {
+        for (int i = 0; i < allemiteinladung.size(); i++) {
             allemiteinladung.get(i).party("Karottenwasser", "karottenkuchen");
         }
 
@@ -51,8 +51,8 @@ stall1.alleHoppeln();
         hasenliste.add(h1);
         hasenliste.add(h2);
         hasenliste.add(h3);
-   hasenliste.add(new Hase("susi", 3, 35));
-   hasenliste.add(new Hase("susi", 5, 35));
+        hasenliste.add(new Hase("susi", 3, 35));
+        hasenliste.add(new Hase("susi", 5, 35));
 
 
         System.out.println("hasenliste ungeordnet");

@@ -1,5 +1,8 @@
 package devices_pruefungsbespieldevices;
 
+import java.util.HashMap;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         // you can test your stuff however you like - it is not evaluated
@@ -16,6 +19,19 @@ public class Main {
         deviceDatabase.addDevice(tablet);
 
         deviceDatabase.sortedPrint();
+        System.out.println("---------");
+
+        System.out.println("ausgabe minimum processor"); //Methode fragt aber nur ab, ob generation passt und dann ob kerne dem minimum entsprechen
+    HashMap <Integer,Integer > minimum = new HashMap<>();
+    minimum.put(2,2);
+    minimum.put(3,2);
+        List<Device> d = deviceDatabase.findDevicesThatFulfillMinimumPerformance(minimum);
+        System.out.println(d);
+
+
+        System.out.println("test numberdevices");
+        System.out.println(deviceDatabase.numberDevicesGroupedbyConstructionCost(200, 100));
+
 
 
     }

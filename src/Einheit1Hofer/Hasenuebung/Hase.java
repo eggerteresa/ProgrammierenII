@@ -1,5 +1,7 @@
 package Einheit1Hofer.Hasenuebung;
 
+import java.util.Objects;
+
 public class Hase  implements Comparable<Hase>,  GoesToParty  {
     protected String name;
     protected int alter;
@@ -63,6 +65,19 @@ public class Hase  implements Comparable<Hase>,  GoesToParty  {
                 '}';
     }
 
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Hase hase = (Hase) o;
+//        return alter == hase.alter && karottenzahl == hase.karottenzahl && Objects.equals(name, hase.name);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, alter, karottenzahl);
+//    }
+
     @Override
     public int compareTo(Hase o) {
         if(this.alter < o.alter) {
@@ -79,4 +94,6 @@ public class Hase  implements Comparable<Hase>,  GoesToParty  {
         }
         return 0; //alter muss gleich sein, schauen auf zweites kriterium
     }
+
+
 }

@@ -77,6 +77,7 @@ public class DeviceDatabase {
 
     }
 
+
     public ArrayList<Device> findDevicesThatFulfillMinimumPerformance(HashMap<Integer, Integer> minimum) { // minimum integers werden eingegeben
         ArrayList<Device> result = new ArrayList<>();
 
