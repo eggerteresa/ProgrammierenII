@@ -1,7 +1,7 @@
 package HashMap;
 
 
-import Einheit1Hofer.Hasenuebung.Hase;
+import Hasenuebung.Hase;
 
 import java.util.HashMap;
 import java.util.Map;

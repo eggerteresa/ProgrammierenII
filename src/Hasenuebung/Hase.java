@@ -1,6 +1,4 @@
-package Einheit1Hofer.Hasenuebung;
-
-import java.util.Objects;
+package Hasenuebung;
 
 public class Hase  implements Comparable<Hase>,  GoesToParty  {
     protected String name;

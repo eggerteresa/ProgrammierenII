@@ -1,4 +1,4 @@
-package Einheit1Hofer.Animal;
+package Animal;
 
 import java.util.ArrayList;
 

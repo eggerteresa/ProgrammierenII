@@ -1,7 +1,6 @@
-package Einheit1Hofer.Hasenuebung;
+package Hasenuebung;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class HaseMain {

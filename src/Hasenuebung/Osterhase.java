@@ -1,4 +1,4 @@
-package Einheit1Hofer.Hasenuebung;
+package Hasenuebung;
 
 public class Osterhase extends Hase{
 

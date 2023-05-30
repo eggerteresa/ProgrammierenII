@@ -1,4 +1,4 @@
-package Einheit1Hofer.Hasenuebung;
+package Hasenuebung;
 
 public class Igel implements GoesToParty {
     @Override

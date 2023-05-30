@@ -1,6 +1,6 @@
 package OrchesteruebungHofer;
 
-import Einheit1Hofer.Hasenuebung.Hase;
+import Hasenuebung.Hase;
 
 import java.util.Comparator;
 
